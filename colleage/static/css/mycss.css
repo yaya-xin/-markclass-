@@ -1,0 +1,211 @@
+/*通用样式begin*/
+body{
+	color:#000;
+	font-family: " helvetica"
+}
+
+a:hover{
+	text-decoration:none;
+}
+ul,ol{
+	list-style: none;
+}
+
+
+/*按钮的自定义*/
+.btn-lk{
+	color: #ffffff; 
+	background-color:#de8186;/*#8330F0*/
+	border-color: #de8186;/*#9318F2*/
+}
+
+.btn-lk:hover,
+.btn-lk:focus,
+
+.btn-lk:active,
+.btn-lk.active,
+.open .dropdown-toggle.btn-lk{
+	color:#ffffff;
+	background-color:#de8186;/*#9146F2*/
+	border-color:#de8186;/*#9318F2*/
+}
+
+.btn-lk:active,
+.btn-lk.active,
+.open .dropdown-toggle.btn-lk{
+	background-image:none;
+}
+
+.btn-lk.disabled,
+.btn-lk[disabled],
+.fieldset[disabled] .btn-lk,
+.btn-lk.disabled:hover,
+.btn-lk[disabled]:hover,
+fieldset[disabled] .btn-lk:hover,
+.btn-lk.disabled:focus,
+.btn-lk[disabled]:focus,
+fieldset[disabled] .btn-lk:focus,
+.btn-lk.disabled:active,
+.btn-lk[disabled]:active,
+.fieldset[disabled] .btn-lk:active,
+.btn-lk[disabled].active,
+.btn-lk[disabled].active,
+fieldset[disabled] .btn-lk.active{
+	background-color: #de8186;/*#8330F0*/
+	border-color:#de8186;/*9318F2*/
+}
+
+.btn-lk .badge {
+	color: #8330F0;
+	background-color:#ffffff;
+}
+
+/*通用样式end*/
+/*头部-begin*/
+#lk_header .top-bar{
+	height:40px;
+	line-height:39px;
+	border-bottom:1px solid #e0e0e0;
+}
+
+#lk_header .top-bar .container .row>div+div{
+	border-left:1px solid #e0e0e0;
+}
+#lk_header .top-bar .container .row .top-bar-1 a{
+	position:relative;
+}
+#lk_header .top-bar .container .row .top-bar-1 a img{
+	position: absolute;
+	top:20px;
+	left: 50%;
+	transform:translateY(8%);
+	z-index:999;
+	display: none;
+}
+#lk_header .top-bar .container .row .top-bar-1 a:hover img{
+   display:block;
+}
+
+
+/*导航部分*/
+#lk_header .navbar-lk{
+	border-bottom:1px solid #e0e0e0;
+	
+}
+
+#lk_header .navbar-lk .navbar-brand{
+	height: 90px;
+	/*background-color:red;*/
+	margin-left:15px;
+	margin-right:60px;
+	
+	
+	
+}
+#lk_header .navbar-lk .navbar-brand img{
+	width:130px;
+}
+
+#lk_header .navbar-lk .navbar-nav>li>a{
+	height:90px;
+	display: flex;
+	justify-content:center;
+	align-items:center ;
+	margin-right:10px;
+}
+/*当鼠标进到a标签里面有下边线*/
+#lk_header .navbar-lk .navbar-nav>li>a:hover{
+	border-bottom:2px solid #de8186;
+}
+
+#lk_header .navbar-lk .navbar-toggler{
+	margin-top:5px;
+}
+
+/*头部-end*/
+
+/*轮播图begin*/
+#lk_carousel{
+	/*background-color:green;*/
+}
+#lk_carousel .carousel-item{
+	background:no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+
+#lk_carousel .carousel-item img{
+	width:100%;
+}
+/*要做一个媒体查询，当屏幕大于900时，背景图片的高度应该和原本图片一致*/
+/*当宽度大于900px设置高度*/
+@media screen and (min-width:900px) {
+	#lk_carousel .carousel-item{
+		height:410px;	
+    }	
+}
+/*轮播图end*/
+
+/*热门课程begin*/
+#lk_hot{
+	
+}
+/*热门课程end*/
+
+/*产品中心begin*/
+#lk_produce{
+
+   padding:40px 0;
+}
+
+#lk_produce .nav-item{
+   font-size:18px;
+}
+
+#lk_produce .nav-item a{
+   color:#000000;
+   border:none;
+   padding:10px 20px;
+}
+
+#lk_produce .nav-item a.active{
+	border:none;
+	background-color:transparent;
+	border-bottom:2px solid #de8186;
+	color:#de8186;
+}
+
+#lk_produce .tab-content{
+	padding-top:20px;
+}
+/*产品中心end*/
+
+/*关于我们begin*/
+#lk_about{
+
+}
+/*关于我们end*/
+
+/*友情链接begin*/
+#lk_link{
+
+}
+/*友情链接end*/
+
+/*尾部begin*/
+#lk_footer{
+	width:100%;
+	height:200px;
+	background-color:#de8186;
+	/*background:url("../../img/beijing.jpg") no-repeat center;*/
+    color:#fff;
+}
+#lk_footer .container .row{
+	height:200px;
+}
+
+#lk_footer .container .row a{
+	color:#fff;
+}
+/*尾部start*/
+
